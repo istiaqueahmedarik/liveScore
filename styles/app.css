@@ -1,0 +1,266 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.home_svg__animated {
+  width: 100vh;
+}
+.Home {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(41, 41, 41);
+}
+.right__container,
+.left__container {
+  display: grid;
+  place-items: center;
+}
+.left__container {
+  padding-left: 2%;
+}
+.right__container {
+  padding-right: 2%;
+}
+.left__container .main_text h1 {
+  color: #ff6263;
+  font-size: 3rem;
+}
+.left__container {
+  color: white;
+}
+.left__container .main_text a {
+  border: 1px solid red;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 999px;
+  background-color: rgb(255, 255, 255);
+  color: #ef5354;
+  transition: 0.7s;
+}
+.left__container .main_text a:hover {
+  background-color: #ef5354;
+  color: white;
+  transition: 0.7s;
+}
+@media (max-width: 1002px) {
+  .container {
+    flex-direction: column;
+  }
+  .home_svg__animated {
+    width: 100vw;
+  }
+  .left__container .main_text {
+    text-align: center;
+  }
+}
+
+.live {
+  /* border: 1px solid black; */
+}
+.live__container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1% !important;
+  /* width: fit-content; */
+  border-radius: 15px;
+  background-color: #ff6263;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.teamImage {
+  display: grid;
+  place-items: center;
+}
+.teamImage img {
+  width: 40%;
+}
+
+@media (max-width: 679px) {
+  .result__card {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .live__container {
+    flex-direction: column;
+    /* text-align: center; */
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .teamImage {
+    display: flex;
+    justify-content: space-around;
+  }
+  .live__Title {
+    display: none;
+  }
+}
+@media (min-width: 679px) {
+  .live__shortTitle {
+    display: none;
+  }
+}
+
+.result__card {
+  display: grid;
+  margin: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 5;
+}
+.result__container img {
+  width: 40%;
+  object-fit: contain;
+}
+.result__container {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 3%;
+  background: #9356d1;
+  color: white;
+  /* height: 58vh; */
+  padding: 2%;
+}
+.score {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  text-align: center;
+}
+.livered {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  background-color: black;
+  width: fit-content;
+  border-radius: 999px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.match a {
+  border: 1px solid red;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 999px;
+  background-color: rgb(255, 255, 255);
+  color: #ef5354;
+  transition: 0.7s;
+  margin-left: 5%;
+  /* margin-bottom: 3% !important; */
+}
+.match a:hover {
+  background-color: #ef5354;
+  color: white;
+  transition: 0.7s;
+}
+.match {
+  margin-top: 2%;
+}
+.live {
+  margin-top: 2%;
+}
+.summury p img {
+  width: 5%;
+}
+.summury {
+  /* border: 1px solid; */
+  background: #6682d9;
+  text-align: center;
+  color: white;
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.middle {
+  /* background: url(https://www.mistay.in/travel-blog/content/images/2020/08/cricket-stadium-1.jpg); */
+  /* backdrop-filter: blur(19px); */
+  background: #e44c4c;
+  color: #fffcfc;
+  display: flex;
+  justify-content: space-around;
+  text-align: left !important;
+}
+.Details {
+  margin-top: 0;
+}
+.bat {
+  text-align: center;
+}
+.batsmen {
+  display: flex;
+  justify-content: space-around;
+}
+table {
+  width: 90%;
+  background: #6682d9;
+  color: white;
+  margin: auto;
+  border-radius: 10px;
+}
+.recent {
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.wicket {
+  background-color: red;
+}
+.finish {
+  background-color: rgb(49, 231, 49);
+  color: white;
+  border: 0px solid white !important;
+}
+.live__text {
+  padding-left: 2%;
+}
+.commentry p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 2% !important;
+  font-size: 20px;
+  border: 1px solid red;
+  padding: 2%;
+  border-radius: 17px;
+  word-wrap: break-word;
+}
+.summuryLeft {
+  padding-left: 2%;
+}
+
+.summuryRight {
+  padding-right: 2%;
+}
+.wicket {
+  background-color: rgb(243, 59, 59);
+  color: white;
+  border: none !important;
+}
+footer {
+  font-size: 10px;
+}
+.footer {
+  border: none !important;
+  margin: 0 !important;
+}
+.matchResult {
+  margin-left: 2%;
+}
+.live__text a {
+  margin-left: 1% !important;
+}
+.six {
+  background-color: rgb(96, 96, 221);
+  color: white !important;
+}
