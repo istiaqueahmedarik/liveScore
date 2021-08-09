@@ -50,7 +50,7 @@ function Details() {
     },[commentary])
     useEffect(() => {
         
-        const uid = window.location.pathname.split("/")[2]
+        const uid = window?.location?.pathname.split("/")[2]
             // console.log(router.query)
             let url = "https://api.bdcrictime.com/score/matches/"+uid+"/live"
             let urlTwo = "https://api.bdcrictime.com/score/matches/"+uid+"/scorecard"
