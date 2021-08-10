@@ -78,7 +78,7 @@ function Details() {
                 console.log(error);
             })
     
-        const timer = setInterval(() => {
+        const Timer = setInterval(() => {
             
             // const { id } = router.query
             
@@ -108,7 +108,7 @@ function Details() {
             })
           }, 5000);
         
-          return () => clearInterval(timer);
+          return () => clearInterval(Timer);
     },[])
     
     
