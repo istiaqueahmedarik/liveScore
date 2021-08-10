@@ -59,7 +59,7 @@ function Details() {
                 // handle success
                 console.log(response.data.response);
                 setLive(response.data.response)
-                setCommentary(response.data.response.commentaries.reverse())
+                setCommentary(response.data.response?.commentaries.reverse())
 
             })
             .catch(function (error) {
@@ -87,7 +87,7 @@ function Details() {
                 // handle success
                 console.log(response.data.response);
                 setLive(response.data.response)
-                setCommentary(response.data.response.commentaries.reverse())
+                setCommentary(response.data.response?.commentaries.reverse())
 
 
             })
@@ -141,7 +141,7 @@ function Details() {
                         <tr><th>Name</th><th>Runs</th><th>Ball</th><th>4</th><th>6</th><th>SR</th></tr>
                         {live.batsmen?.map((item)=>{
                     return(
-                        <tr key>
+                        <tr key={item.match_id}>
                             
                             <td>{item.name}</td>
                             <td>{item.runs}</td>
@@ -163,7 +163,7 @@ function Details() {
                         <tr><th>Name</th><th>Overs</th><th>Runs</th><th>W</th><th>M</th><th>Ec.</th></tr>
                         {live.bowlers?.map((item)=>{
                     return(
-                        <tr key>
+                        <tr key={item.match_id}>
                             
                             <td>{item.name}</td>
                             <td>{item.overs}</td>
