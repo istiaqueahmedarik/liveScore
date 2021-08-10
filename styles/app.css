@@ -201,7 +201,7 @@
   justify-content: space-around;
 }
 table {
-  width: 90%;
+  /* width: 90%; */
   background: #6682d9;
   color: white;
   margin: auto;
@@ -209,7 +209,7 @@ table {
 }
 .recent {
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   text-align: center;
 }
@@ -263,4 +263,9 @@ footer {
 .six {
   background-color: rgb(96, 96, 221);
   color: white !important;
+}
+.Details {
+  margin-top: 2%;
+  display: grid;
+  place-items: center;
 }
